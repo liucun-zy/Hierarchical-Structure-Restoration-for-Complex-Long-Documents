@@ -134,6 +134,10 @@ This is a source-code-only release. See [DATA_POLICY.md](DATA_POLICY.md) for pub
 
 Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) and follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 
+## Contact
+
+For project questions, contact [yuzou01210@gmail.com](mailto:yuzou01210@gmail.com).
+
 ## License
 
 Released under the [MIT License](LICENSE).

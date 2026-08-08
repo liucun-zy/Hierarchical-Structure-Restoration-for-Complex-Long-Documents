@@ -4,4 +4,4 @@ We are committed to a welcoming, respectful, and harassment-free community. Part
 
 Harassment, discriminatory language, threats, personal attacks, and publication of another person's private information are not acceptable.
 
-If you experience or witness unacceptable behavior, contact a repository maintainer privately. Maintainers may remove, edit, or reject contributions and comments that violate this code of conduct.
+If you experience or witness unacceptable behavior, contact a repository maintainer privately at [yuzou01210@gmail.com](mailto:yuzou01210@gmail.com). Maintainers may remove, edit, or reject contributions and comments that violate this code of conduct.
