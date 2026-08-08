@@ -1,0 +1,27 @@
+# Python bytecode and test artifacts
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Local environments and editor settings
+.venv/
+venv/
+.env
+.DS_Store
+.idea/
+.vscode/
+
+# Packaging output
+build/
+dist/
+*.egg-info/
+
+# Pipeline output and temporary files
+*.cleaned.md
+*.aligned.md
+*.titles.json
+_compressed_retry_image.jpg
