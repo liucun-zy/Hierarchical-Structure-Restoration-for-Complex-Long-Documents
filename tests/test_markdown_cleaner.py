@@ -1,6 +1,6 @@
 import unittest
 
-from emnlp_submission.markdown_cleaner import clean_markdown
+from hierarchical_structure_restoration.markdown_cleaner import clean_markdown
 
 
 class MarkdownCleanerTests(unittest.TestCase):

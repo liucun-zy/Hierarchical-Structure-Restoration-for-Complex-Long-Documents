@@ -1,14 +1,14 @@
-# ESG Heading Restoration
+# Hierarchical Structure Restoration for Complex Long Documents
 
 [中文说明](#中文说明) | [English](#overview)
 
 ## 中文说明
 
-这是一个用于恢复 ESG 报告及其他长文档标题层级的 Python 工具包。它先清理由 OCR 或文档转换产生的 Markdown 噪声，再根据目录 JSON 或目录图片恢复标题。仓库仅包含源代码、测试和合成示例；不包含任何企业报告、PDF、转换结果或 API 凭据。
+这是一个用于恢复复杂长文档层级结构的 Python 工具包。它先清理由 OCR 或文档转换产生的 Markdown 噪声，再根据目录 JSON 或目录图片恢复标题。仓库仅包含源代码、测试和合成示例；不包含任何企业报告、PDF、转换结果或 API 凭据。
 
 ## Overview
 
-ESG Heading Restoration is a Python toolkit for restoring the heading hierarchy of Markdown documents. It supports an offline workflow using an existing table-of-contents (ToC) JSON file and an optional vision-LLM workflow that extracts the ToC from an image.
+Hierarchical Structure Restoration for Complex Long Documents is a Python toolkit for restoring the heading hierarchy of long Markdown documents. It supports an offline workflow using an existing table-of-contents (ToC) JSON file and an optional vision-LLM workflow that extracts the ToC from an image.
 
 The alignment pipeline uses three ordered stages:
 
@@ -21,8 +21,8 @@ The alignment pipeline uses three ordered stages:
 Requires Python 3.10 or later.
 
 ```bash
-git clone https://github.com/<your-account>/esg-heading-restoration.git
-cd esg-heading-restoration
+git clone https://github.com/liucun-zy/Hierarchical-Structure-Restoration-for-Complex-Long-Documents.git
+cd Hierarchical-Structure-Restoration-for-Complex-Long-Documents
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
@@ -40,7 +40,7 @@ python -m pip install -e ".[chinese,dev]"
 The included synthetic example runs fully offline:
 
 ```bash
-esg-heading-restore \
+hierarchical-structure-restore \
   --markdown-input examples/input.md \
   --toc-json examples/titles.json \
   --cleaned-output examples/input.cleaned.md \
@@ -52,7 +52,7 @@ The two generated files are ignored by Git. Review `examples/input.aligned.md` t
 You can also invoke the module directly:
 
 ```bash
-python -m emnlp_submission.main --help
+python -m hierarchical_structure_restoration.main --help
 ```
 
 ## Input modes
@@ -71,7 +71,7 @@ Provide a JSON array whose nodes have a `title` and optional `subtitles` list:
 ```
 
 ```bash
-esg-heading-restore \
+hierarchical-structure-restore \
   --markdown-input report.md \
   --toc-json titles.json \
   --cleaned-output report.cleaned.md \
@@ -87,7 +87,7 @@ export LLM_API_KEY="your-api-key"
 export LLM_BASE_URL="https://api.example.com/v1"
 export LLM_MODEL="your-vision-model"
 
-esg-heading-restore \
+hierarchical-structure-restore \
   --markdown-input report.md \
   --toc-image toc.jpg \
   --cleaned-output report.cleaned.md \
@@ -120,7 +120,7 @@ The GitHub Actions workflow runs these tests on supported Python versions for ea
 ## Repository layout
 
 ```text
-src/emnlp_submission/  Core package and command-line entry point
+src/hierarchical_structure_restoration/  Core package and command-line entry point
 tests/                 Unit tests
 examples/              Synthetic, non-sensitive example inputs
 .github/               Continuous-integration and issue templates

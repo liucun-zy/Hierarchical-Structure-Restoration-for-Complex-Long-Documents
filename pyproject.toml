@@ -3,9 +3,9 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "esg-heading-restoration"
+name = "hierarchical-structure-restoration-for-complex-long-documents"
 version = "0.1.0"
-description = "Restore document heading hierarchy from Markdown and table-of-contents data."
+description = "Restore hierarchical structure in complex long Markdown documents from table-of-contents data."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
@@ -32,7 +32,7 @@ chinese = [
 dev = ["pytest>=8.0"]
 
 [project.scripts]
-esg-heading-restore = "emnlp_submission.main:main"
+hierarchical-structure-restore = "hierarchical_structure_restoration.main:main"
 
 [tool.setuptools]
 package-dir = { "" = "src" }

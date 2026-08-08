@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from emnlp_submission.title_aligner import align_document
+from hierarchical_structure_restoration.title_aligner import align_document
 
 
 class TitleAlignerTests(unittest.TestCase):

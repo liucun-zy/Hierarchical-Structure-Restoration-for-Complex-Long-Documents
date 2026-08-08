@@ -1,6 +1,6 @@
 import unittest
 
-from emnlp_submission.toc_extractor import parse_toc_response
+from hierarchical_structure_restoration.toc_extractor import parse_toc_response
 
 
 class TocExtractorTests(unittest.TestCase):
